@@ -1,0 +1,54 @@
+const charactersAPI = new APIHandler('http://localhost:8000');
+
+window.addEventListener('load', () => {
+  document.getElementById('fetch-all').addEventListener('click', function (event) {
+    charactersAPI.getFullList()
+  });
+
+  document.getElementById('fetch-one').addEventListener('click', function (event) {
+    let id = document.getElementById("character-id").value
+    charactersAPI.getOneRegister(id)
+    
+  });
+
+  document.getElementById('new-character-form').addEventListener('click', ,function (event) {
+  
+    console.log('hello');
+    
+ 
+    let newCharacter = document.getElementById('new-character-form');
+   
+    let createcharacter = {
+       name : newCharacter.name.value,
+       occupation : newCharacter.occupation.value,
+       weapon : newCharacter.weapon.value,
+       cartoon : newCharacter.cartoon.checked
+    }
+    console.log('createcharacter:',createcharacter)
+//  charactersAPI.createOneRegister(createcharacter)
+   
+
+   
+  }).reset();
+
+  document.getElementById('edit-character-form').addEventListener('submit', function (event) {
+    // event.preventDefault();
+    // let characterUpdated = document.getElementById('edit-character-form');
+    // let updateId = characterUpdated.querySelector('.chr-id').value;
+
+    // let newUpdate = {
+    //   name : characterUpdated.name.value,
+    //   occupation : characterUpdated.occupation.value, 
+    //   weapon : characterUpdated.weapon.value, 
+    //   cartoon : characterUpdated.cartoon.checked,
+    // }
+    // console.log('newUpdate:', newUpdate)
+    // // charactersAPI.updateOneRegister(updateId, newUpdate)
+  });
+
+  document.getElementById('delete-one').addEventListener('click', function (event) {
+    // let characterDeletedId = document.querySelector(`input[name='character-id-delete']`).value
+    // charactersAPI.deleteOneRegister(characterDeletedId)
+  });
+
+});

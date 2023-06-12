@@ -1,0 +1,88 @@
+class APIHandler {
+  constructor (baseUrl) {
+    this.BASE_URL = baseUrl;
+  }
+
+  getFullList () {
+    
+    axios.get(`${this.BASE_URL}/characters`)
+      .then(function (response) {
+        // en cas de réussite de la requête
+        console.log(response);
+      })
+      .catch(function (error) {
+        // en cas d’échec de la requête
+        console.error(error);
+      })
+      .finally(function () {
+        // dans tous les cas
+      });
+  }
+
+  getOneRegister (id) {
+    axios.get(`${this.BASE_URL}/characters/${id}`)
+    .then(function (response) {
+      
+      // en cas de réussite de la requête
+      console.log(response);
+    })
+    .catch(function (error) {
+      // en cas d’échec de la requête
+      console.error(error);
+    })
+    .finally(function () {
+      // dans tous les cas
+    });
+  }
+
+  createOneRegister (newCharacter) {
+    axios.post(`${this.BASE_URL}/characters`,newCharacter)
+    .then(function (response) {
+      
+      // en cas de réussite de la requête
+      console.log(response);
+    })
+    .catch(function (error) {
+      // en cas d’échec de la requête
+      console.error(error);
+    })
+    .finally(function () {
+      // dans tous les cas
+      newCharacter.reset()
+    });
+  }
+
+  updateOneRegister (updateId, newUpdate) {
+    axios.put(`${this.BASE_URL}/characters,${updateId}`,newUpdate)
+    .then(function (response) {
+      
+      // en cas de réussite de la requête
+      console.log(response);
+    })
+    .catch(function (error) {
+      // en cas d’échec de la requête
+      console.error(error);
+    })
+    .finally(function () {
+      // dans tous les cas
+    });
+
+  }
+
+  deleteOneRegister (characterDeletedId) {
+    axios.delete(`${this.BASE_URL}/characters,${characterDeletedId}`, {})
+    .then(function (response) {
+      
+      // en cas de réussite de la requête
+      console.log(response);
+    })
+    .catch(function (error) {
+      // en cas d’échec de la requête
+      console.error(error);
+    })
+    .finally(function () {
+      // dans tous les cas
+    });
+
+  }
+}

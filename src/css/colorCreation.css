@@ -1,0 +1,46 @@
+.divContainer {
+    display: flex;
+    flex-direction:  row;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
+.RGBColorPicker {
+   
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+}
+.rColor {
+    display: inline-block;
+border: 1px solid #000;
+width: 50px;
+background-color: red;
+height: 20px;
+}
+.gColor {
+    display: inline-block;
+    border: 1px solid #000;
+    background-color: green;
+    width: 50px;
+    height: 20px;
+}
+.bColor {
+    display: inline-block;
+    border: 1px solid #000;
+    background-color: blue;
+    width: 50px;
+    height: 20px;
+}
+.rgbColor {
+display: inline-block;
+height: 20px;
+width: 50px;
+}
+
+.divRGB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

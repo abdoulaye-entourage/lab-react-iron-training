@@ -1,0 +1,89 @@
+.container {
+    width: 100%;
+    border: 1px solid red;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    margin: 20px;
+    gap: 20px;
+    width:100%
+}
+#email, #password, #select {
+    width: 500px;
+    text-align: center;
+    align-self: center;
+}
+
+#select {
+    margin-bottom: 10px;
+}
+.formChild {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+/* .formChild input[type='email'], 
+.formChild input[type='password'] {
+    padding: 5px 27.5px;
+    position: relative;
+    background-color: unset;
+}
+.formChild > span > .fa-solid {
+left: 25rem;
+position: absolute;
+right: 0;
+color :green;
+} */
+
+#email {
+    padding: 5px;
+    border: none;
+    width: 100%;
+    height: 100%;
+ }
+#password{
+    padding: 5px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    
+    
+ }
+ .divInput {
+    position: relative;
+    width: 300px;
+    display: flex;
+ }
+ .divIcon > i {
+   display: flex;
+   align-items: center;
+   padding: 5px;
+ }
+ .divIcon {
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+
+ }
+
+ .inputRed {
+    border: 2px solid red;
+ }
+ .inputGreen {
+    border: 2px solid green;
+ }
+ .inputGrey {
+    border: 2px solid grey;
+ }
+
+ 

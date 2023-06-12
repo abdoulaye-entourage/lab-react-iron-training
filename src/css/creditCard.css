@@ -1,0 +1,21 @@
+.creditCardDisplay{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(126, 123, 123);
+    gap: 10px;
+}
+
+ .creditCartImage{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: right;
+}
+
+.dateAndBank{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+

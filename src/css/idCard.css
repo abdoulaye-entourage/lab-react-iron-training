@@ -1,0 +1,21 @@
+.idCard{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 10px;
+    width: 50%;
+    align-items: center;
+    border: 1px solid ;
+}
+ .gras {
+   font-style: italic;
+    font-weight: bold;
+}
+.idName{
+    display: flex;
+    flex-direction: column;
+}
+.imgIdCard{
+    width: 20%;
+    margin: 5px;
+}

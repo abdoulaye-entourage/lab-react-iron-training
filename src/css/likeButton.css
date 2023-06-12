@@ -1,0 +1,14 @@
+.likeButton {
+    display: flex;
+}
+.button{
+   width:100px; 
+   height: 30px;
+   margin: 10px;
+   cursor: pointer;
+   
+}
+.button:hover {
+    transition: all 0.2s ease-in-out;
+    border: 5px solid rgb(153, 153, 239);
+}
